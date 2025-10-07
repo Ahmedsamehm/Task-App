@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+:root {
+  --primary-color: #5f33e1;
+  --secondary-color: #24252c;
+  --subtext-color: #6e6a7c;
+}
 body {
   font-family: Sans-Serif;
 }
@@ -30,22 +35,32 @@ h3,
 h4,
 h5 {
   font-weight: bold;
+  color: #24252c;
 }
 
 a:hover {
-  color: #5f33e1;
+  color: var(--primary-color);
   transition: all 0.5s ease-in-out;
 }
 
 .primary {
-  color: #5f33e1;
-}
-.secondary {
-  color: #24252c;
+  color: var(--primary-color);
 }
 
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-primary:hover {
+  background-color: #5f33e1e5;
+  transition: all 0.5s ease-in-out;
+}
+
+/* .secondary {
+  color: #24252c;
+} */
+
 .subtext {
-  color: #6e6a7c;
+  color: var(--subtext-color);
 }
 
 #mobile_menu {
