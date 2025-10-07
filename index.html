@@ -5,57 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Task App</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <div class="bg-gray-100 font-sans w-full ">
-                <div class="bg-white shadow">
-                    <div class="container mx-auto px-4">
-                        <div class="flex items-center justify-between py-4">
-                            <!-- logo -->
-                            <div class="flex items-center gap-2 cursor-pointer  primary">
+    <header class="sticky top-0 z-10 backdrop-blur-md h-20 md:h-fit  ">
+        <nav class="">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
-                                    <path d="M21.801 10A10 10 0 1 1 17 3.335" />
-                                    <path d="m9 11 3 3L22 4" />
-                                </svg>
-                                <h3 class="primary">Task App</h3>
-                            </div>
+            <div class="bg-white/20  ">
+                <div class="container mx-auto px-4">
+                    <div class="flex items-center justify-between py-4">
+                        <!-- logo -->
+                        <div class="flex items-center gap-2 cursor-pointer  primary">
 
-                            <div class="hidden sm:flex sm:items-center mx-auto ">
-                                <a href="#" class="text-gray-800 text-sm font-semibold mr-4 capitalize">home</a>
-                                <a href="#" class="text-gray-800 text-sm font-semibold  mr-4 capitalize">features</a>
-                                <a href="#" class="text-gray-800 text-sm font-semibold  mr-4 capitalize">FeedBack</a>
-                                <a href="#" class="text-gray-800 text-sm font-semibold  capitalize">Pricing</a>
-                            </div>
-
-
-
-                            <div id="mobile_icon" class="sm:hidden cursor-pointer">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-purple-700" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12.9499909,17 C12.7183558,18.1411202 11.709479,19 10.5,19 C9.29052104,19 8.28164422,18.1411202 8.05000906,17 L3.5,17 C3.22385763,17 3,16.7761424 3,16.5 C3,16.2238576 3.22385763,16 3.5,16 L8.05000906,16 C8.28164422,14.8588798 9.29052104,14 10.5,14 C11.709479,14 12.7183558,14.8588798 12.9499909,16 L20.5,16 C20.7761424,16 21,16.2238576 21,16.5 C21,16.7761424 20.7761424,17 20.5,17 L12.9499909,17 Z M18.9499909,12 C18.7183558,13.1411202 17.709479,14 16.5,14 C15.290521,14 14.2816442,13.1411202 14.0500091,12 L3.5,12 C3.22385763,12 3,11.7761424 3,11.5 C3,11.2238576 3.22385763,11 3.5,11 L14.0500091,11 C14.2816442,9.85887984 15.290521,9 16.5,9 C17.709479,9 18.7183558,9.85887984 18.9499909,11 L20.5,11 C20.7761424,11 21,11.2238576 21,11.5 C21,11.7761424 20.7761424,12 20.5,12 L18.9499909,12 Z M9.94999094,7 C9.71835578,8.14112016 8.70947896,9 7.5,9 C6.29052104,9 5.28164422,8.14112016 5.05000906,7 L3.5,7 C3.22385763,7 3,6.77614237 3,6.5 C3,6.22385763 3.22385763,6 3.5,6 L5.05000906,6 C5.28164422,4.85887984 6.29052104,4 7.5,4 C8.70947896,4 9.71835578,4.85887984 9.94999094,6 L20.5,6 C20.7761424,6 21,6.22385763 21,6.5 C21,6.77614237 20.7761424,7 20.5,7 L9.94999094,7 Z M7.5,8 C8.32842712,8 9,7.32842712 9,6.5 C9,5.67157288 8.32842712,5 7.5,5 C6.67157288,5 6,5.67157288 6,6.5 C6,7.32842712 6.67157288,8 7.5,8 Z M16.5,13 C17.3284271,13 18,12.3284271 18,11.5 C18,10.6715729 17.3284271,10 16.5,10 C15.6715729,10 15,10.6715729 15,11.5 C15,12.3284271 15.6715729,13 16.5,13 Z M10.5,18 C11.3284271,18 12,17.3284271 12,16.5 C12,15.6715729 11.3284271,15 10.5,15 C9.67157288,15 9,15.6715729 9,16.5 C9,17.3284271 9.67157288,18 10.5,18 Z" />
-                                </svg>
-                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                                <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                                <path d="m9 11 3 3L22 4" />
+                            </svg>
+                            <h3 class="primary">Task App</h3>
                         </div>
-                        <div id="mobile_menu"
-                            class="opacity-0 invisible sm:hidden bg-gray-200 border-t-2 py-2 transform transition-all duration-500 ease-in-out">
-                            <div class="flex flex-col">
-                                <a href="#" class="text-gray-800 text-sm font-semibold  mb-1">Products</a>
-                                <a href="#" class="text-gray-800 text-sm font-semibold  mb-1">Marketplace</a>
-                                <a href="#" class="text-gray-800 text-sm font-semibold  mb-1">Partners</a>
-                                <a href="#" class="text-gray-800 text-sm font-semibold  mb-1">Pricing</a>
 
-                            </div>
+                        <div class="hidden sm:flex sm:items-center mx-auto ">
+                            <a href="#" class="text-gray-800 text-sm font-semibold mr-4 capitalize">home</a>
+                            <a href="#features" class="text-gray-800 text-sm font-semibold mr-4 capitalize">features</a>
+
+                            <a href="#feedback" class="text-gray-800 text-sm font-semibold  mr-4 capitalize">FeedBack</a>
+                            <a href="#plans" class="text-gray-800 text-sm font-semibold  capitalize">Pricing</a>
+                        </div>
+
+
+
+                        <div id="mobile_icon" class="sm:hidden cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-purple-700" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12.9499909,17 C12.7183558,18.1411202 11.709479,19 10.5,19 C9.29052104,19 8.28164422,18.1411202 8.05000906,17 L3.5,17 C3.22385763,17 3,16.7761424 3,16.5 C3,16.2238576 3.22385763,16 3.5,16 L8.05000906,16 C8.28164422,14.8588798 9.29052104,14 10.5,14 C11.709479,14 12.7183558,14.8588798 12.9499909,16 L20.5,16 C20.7761424,16 21,16.2238576 21,16.5 C21,16.7761424 20.7761424,17 20.5,17 L12.9499909,17 Z M18.9499909,12 C18.7183558,13.1411202 17.709479,14 16.5,14 C15.290521,14 14.2816442,13.1411202 14.0500091,12 L3.5,12 C3.22385763,12 3,11.7761424 3,11.5 C3,11.2238576 3.22385763,11 3.5,11 L14.0500091,11 C14.2816442,9.85887984 15.290521,9 16.5,9 C17.709479,9 18.7183558,9.85887984 18.9499909,11 L20.5,11 C20.7761424,11 21,11.2238576 21,11.5 C21,11.7761424 20.7761424,12 20.5,12 L18.9499909,12 Z M9.94999094,7 C9.71835578,8.14112016 8.70947896,9 7.5,9 C6.29052104,9 5.28164422,8.14112016 5.05000906,7 L3.5,7 C3.22385763,7 3,6.77614237 3,6.5 C3,6.22385763 3.22385763,6 3.5,6 L5.05000906,6 C5.28164422,4.85887984 6.29052104,4 7.5,4 C8.70947896,4 9.71835578,4.85887984 9.94999094,6 L20.5,6 C20.7761424,6 21,6.22385763 21,6.5 C21,6.77614237 20.7761424,7 20.5,7 L9.94999094,7 Z M7.5,8 C8.32842712,8 9,7.32842712 9,6.5 C9,5.67157288 8.32842712,5 7.5,5 C6.67157288,5 6,5.67157288 6,6.5 C6,7.32842712 6.67157288,8 7.5,8 Z M16.5,13 C17.3284271,13 18,12.3284271 18,11.5 C18,10.6715729 17.3284271,10 16.5,10 C15.6715729,10 15,10.6715729 15,11.5 C15,12.3284271 15.6715729,13 16.5,13 Z M10.5,18 C11.3284271,18 12,17.3284271 12,16.5 C12,15.6715729 11.3284271,15 10.5,15 C9.67157288,15 9,15.6715729 9,16.5 C9,17.3284271 9.67157288,18 10.5,18 Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="mobile_menu" class="opacity-0 invisible sm:hidden  border-t-2 py-2 transform transition-all duration-500 ease-in-out">
+                        <div class="flex flex-col">
+                            <a href="#" class="text-gray-800 text-sm font-semibold  mb-1">home</a>
+                            <a href="#features" class="text-gray-800 text-sm font-semibold  mb-1">features</a>
+                            <a href="#feedback" class="text-gray-800 text-sm font-semibold  mb-1">FeedBack</a>
+                            <a href="#plans" class="text-gray-800 text-sm font-semibold  mb-1">Pricing</a>
+
                         </div>
                     </div>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -63,28 +64,28 @@
 
 
     <main>
-        <section class="my-5">
+        <section id="hero" class=" min-h-[100vh] items-center relative mt-10  lg:translate-y-1/6">
             <div class="container mx-auto p-4">
+                <div class="flex flex-col lg:flex-row justify-between items-center mx-auto gap-5 ">
 
-                <div class="flex flex-col lg:flex-row justify-between  items-center mx-auto gap-3 ">
-                    <div class="flex-1    justify-items-center">
-                        <img src="/public/hero.png" alt="heroLogo" class="w-1/2 bg-cover object-cover">
+
+                    <div class="flex-1 justify-items-center" data-aos="fade-right">
+                        <img src="/public/landingpage.png" alt="heroLogo" class="w-full bg-cover object-cover">
                     </div>
-                    <div class="flex-1 text-wrap ">
-                        <div class="text-wrap w-full  mx-auto items-center">
-                            <h1>
-                                Task App &
-                                To-Do List
+
+                    <div class="flex-1 text-wrap">
+                        <div class="text-wrap w-full mx-auto items-center space-y-3">
+                            <h1 data-aos="fade-up" data-aos-delay="100">
+                                Task App & To-Do List
                             </h1>
-                            <p class="subtext text-wrap w-full max-w-lg">
+
+                            <p class="subtext text-wrap w-full max-w-lg" data-aos="fade-up" data-aos-delay="200">
                                 This productive tool is designed to help you better manage your task project-wise conveniently!
                             </p>
-
                         </div>
 
-
-                        <button
-                            class=" bg-primary text-white p-3 rounded-xl flex items-center gap-2 mt-3 hover:bg-primary transform transition-all duration-500 ease-in-out cursor-pointer">
+                        <button data-aos="zoom-in" data-aos-delay="400"
+                            class="bg-primary text-white p-3 rounded-xl flex items-center gap-2 mt-3 hover:bg-primary transform transition-all duration-500 ease-in-out cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-telescope-icon lucide-telescope">
                                 <path d="m10.065 12.493-6.18 1.318a.934.934 0 0 1-1.108-.702l-.537-2.15a1.07 1.07 0 0 1 .691-1.265l13.504-4.44" />
@@ -96,16 +97,534 @@
                                 <path d="m8 21 3.105-6.21" />
                                 <circle cx="12" cy="13" r="2" />
                             </svg>
-                            explorer now</button>
+                            explorer now
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="my-5  ">
+            <h1 class="text-center my-10">Features</h1>
+            <hr class="w-24 h-1 bg-primary border-0 mx-auto mb-10" />
+            <div class="container mx-auto p-4  ">
+                <div class="flex flex-col lg:flex-row justify-between gap-3 mx-auto p-5">
+
+                    <div class="flex-1 mx-auto" data-aos="fade-right">
+                        <img src="/public/homePage.png" alt="homePage" class="w-full md:w-1/2 mx-auto bg-cover object-cover ">
+                    </div>
+
+                    <div class="flex-1 " data-aos="fade-left">
+                        <div class="flex flex-col text-wrap justify-center min-h-[70vh] space-y-3">
+
+                            <h1 class="!text-4xl" data-aos="fade-up" data-aos-delay="100">
+                                Simple Task Management with Clear Progress
+                            </h1>
+
+                            <h2 class="!text-3xl" data-aos="fade-up" data-aos-delay="200">
+                                Track Progress Easily
+                            </h2>
+
+                            <p class="subtext text-wrap w-full max-w-2xl" data-aos="fade-up" data-aos-delay="300">
+                                Clean design and smooth experience make tracking tasks quick and clear.
+                                See your daily progress instantly with a visual circle, keeping you focused and motivated.
+                            </p>
+
+                            <h2 class="!text-3xl" data-aos="fade-up" data-aos-delay="400">
+                                Stay Organized
+                            </h2>
+
+                            <p class="subtext text-wrap w-full max-w-2xl" data-aos="fade-up" data-aos-delay="500">
+                                Group tasks by category like “Work” or “Study.”
+                                View total tasks and progress for each group in one place.
+                                Keep everything simple, visible, and under control.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between gap-3 mx-auto  my-5 p-5">
+
+                    <div class="flex-1 mx-auto lg:order-2" data-aos="fade-right">
+                        <img src="/public/today.png" alt="todayImage" class="w-full md:w-1/2 mx-auto  bg-cover object-cover">
+                    </div>
+
+                    <div class="flex-1 lg:order-1" data-aos="fade-left">
+                        <div class="flex flex-col text-wrap justify-center min-h-[70vh] space-y-5">
+
+                            <h1 class="!text-4xl" data-aos="fade-up" data-aos-delay="100">
+                                Daily Tasks with Smart Filters
+                            </h1>
+
+                            <h2 class="!text-3xl" data-aos="fade-up" data-aos-delay="200">
+                                Focus on What Matters Today
+                            </h2>
+
+                            <p class="subtext text-wrap w-full max-w-2xl" data-aos="fade-up" data-aos-delay="300">
+                                View all tasks for any selected day with full details and status updates.
+                                Switch between dates to track your daily goals and monitor progress over time.
+                            </p>
+
+                            <h2 class="!text-3xl" data-aos="fade-up" data-aos-delay="400">
+                                Filter and Focus
+                            </h2>
+
+                            <p class="subtext text-wrap w-full max-w-2xl" data-aos="fade-up" data-aos-delay="500">
+                                Use quick filters to see only what you need—like <strong>In Progress</strong>,
+                                <strong>Completed</strong>, or <strong>Pending</strong> tasks.
+                                This helps you focus on current priorities without distractions.
+                            </p>
+
+                            <h2 class="!text-3xl" data-aos="fade-up" data-aos-delay="600">
+                                Stay in Control
+                            </h2>
+
+                            <p class="subtext text-wrap w-full max-w-2xl" data-aos="fade-up" data-aos-delay="700">
+                                Every task shows key details such as deadlines, progress level, and notes.
+                                Manage your day efficiently with a clear view of what’s done and what’s next.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between gap-3 mx-auto  my-5 p-5">
+
+                    <div class="flex-1 mx-auto " data-aos="fade-right">
+                        <img src="/public/addProject.png" alt="todayImage" class="w-full md:w-1/2 mx-auto  bg-cover object-cover">
+                    </div>
+
+                    <div class="flex-1 " data-aos="fade-left">
+                        <div class="flex flex-col text-wrap justify-center min-h-[70vh] space-y-5">
+
+                            <h1 class="!text-4xl" data-aos="fade-up" data-aos-delay="100">
+                                Daily Tasks with Smart Filters
+                            </h1>
+
+                            <h2 class="!text-3xl" data-aos="fade-up" data-aos-delay="200">
+                                Focus on What Matters Today
+                            </h2>
+
+                            <p class="subtext text-wrap w-full max-w-2xl" data-aos="fade-up" data-aos-delay="300">
+                                View all tasks for any selected day with full details and status updates.
+                                Switch between dates to track your daily goals and monitor progress over time.
+                            </p>
+
+                            <h2 class="!text-3xl" data-aos="fade-up" data-aos-delay="400">
+                                Filter and Focus
+                            </h2>
+
+                            <p class="subtext text-wrap w-full max-w-2xl" data-aos="fade-up" data-aos-delay="500">
+                                Use quick filters to see only what you need—like <strong>In Progress</strong>,
+                                <strong>Completed</strong>, or <strong>Pending</strong> tasks.
+                                This helps you focus on current priorities without distractions.
+                            </p>
+
+                            <h2 class="!text-3xl" data-aos="fade-up" data-aos-delay="600">
+                                Stay in Control
+                            </h2>
+
+                            <p class="subtext text-wrap w-full max-w-2xl" data-aos="fade-up" data-aos-delay="700">
+                                Every task shows key details such as deadlines, progress level, and notes.
+                                Manage your day efficiently with a clear view of what’s done and what’s next.
+                            </p>
+
+                        </div>
 
                     </div>
 
                 </div>
             </div>
         </section>
+
+        <section id="feedback" class="my-5">
+            <h1 class="text-center my-10">Feedback</h1>
+            <hr class="w-24 h-1 bg-primary border-0 mx-auto mb-10" />
+            <div class="container mx-auto p-5">
+
+
+
+                <div class="flex flex-wrap justify-center gap-6 my-10">
+
+                    <!-- Card 1 -->
+                    <div data-aos="fade-right" class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
+                        <div class="flex items-center gap-4 text-slate-800">
+                            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1480&q=80" alt="Sarah Lee"
+                                class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center" />
+                            <div class="flex w-full flex-col">
+                                <div class="flex items-center justify-between">
+                                    <h5 class="text-xl font-semibold text-slate-800">Sarah Lee</h5>
+                                    <div class="flex items-center gap-0.5">
+                                        <!-- 5 Stars -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-xs uppercase font-bold text-slate-500 mt-0.5">
+                                    UI Designer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-base text-slate-600 font-light leading-normal">
+                                "The clean interface makes it easy to track my daily tasks. I can see progress and stay organized all day."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div data-aos="fade-right" class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
+                        <div class="flex items-center gap-4 text-slate-800">
+                            <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?auto=format&fit=crop&w=1480&q=80"
+                                alt="James Carter" class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center" />
+                            <div class="flex w-full flex-col">
+                                <div class="flex items-center justify-between">
+                                    <h5 class="text-xl font-semibold text-slate-800">James Carter</h5>
+                                    <div class="flex items-center gap-0.5">
+                                        <!-- 4 Stars -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-xs uppercase font-bold text-slate-500 mt-0.5">Frontend Developer</p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-base text-slate-600 font-light leading-normal">
+                                "The progress tracking feature keeps me focused. The filters are great for checking what’s still in progress."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div data-aos="fade-right" class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
+                        <div class="flex items-center gap-4 text-slate-800">
+                            <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?auto=format&fit=crop&w=1480&q=80"
+                                alt="James Carter" class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center" />
+                            <div class="flex w-full flex-col">
+                                <div class="flex items-center justify-between">
+                                    <h5 class="text-xl font-semibold text-slate-800">James Carter</h5>
+                                    <div class="flex items-center gap-0.5">
+                                        <!-- 4 Stars -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-5 h-5 text-yellow-600">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-xs uppercase font-bold text-slate-500 mt-0.5">Frontend Developer</p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-base text-slate-600 font-light leading-normal">
+                                "The progress tracking feature keeps me focused. The filters are great for checking what’s still in progress."
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section id="plans">
+
+            <h1 class="text-center my-10">Plans</h1>
+            <hr class="w-24 h-1 bg-primary border-0 mx-auto mb-10" />
+            <div class="container mx-auto ">
+                <div class="flex flex-col md:flex-row justify-center mx-auto items-center gap-10 my-16 flex-wrap px-6">
+
+                    <!-- Card -->
+                    <div data-aos="zoom-in"
+                        class="flex flex-col flex-1 w-full  max-w-[380px] bg-white rounded-2xl shadow-lg  p-10 border border-[var(--primary-color)] hover:scale-[1.02] transition-transform duration-200">
+                        <div class="pb-10 mb-10 text-center border-b border-[var(--subtext-color)]">
+                            <p class="text-sm uppercase font-semibold text-[var(--subtext-color)]">Free</p>
+                            <h1 class="flex justify-center items-end gap-1 mt-5 font-bold text-[var(--secondary-color)] text-7xl">
+                                <span class="text-3xl">$</span>9
+                                <span class="text-2xl text-[var(--subtext-color)]">/mo</span>
+                            </h1>
+                        </div>
+                        <ul class="flex flex-col gap-5">
+                            <li class="flex items-center gap-4">
+                                <span class="p-1.5 border rounded-full border-[var(--primary-color)] bg-[var(--primary-color)]/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5 text-[var(--primary-color)]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                                    </svg>
+                                </span>
+                                <p class="text-[var(--subtext-color)] text-base">2 team members</p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="p-1.5 border rounded-full border-[var(--primary-color)] bg-[var(--primary-color)]/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5 text-[var(--primary-color)]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                                    </svg>
+                                </span>
+                                <p class="text-[var(--subtext-color)] text-base">50+ components</p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="p-1.5 border rounded-full border-[var(--primary-color)] bg-[var(--primary-color)]/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5 text-[var(--primary-color)]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                                    </svg>
+                                </span>
+                                <p class="text-[var(--subtext-color)] text-base">Basic support</p>
+                            </li>
+                        </ul>
+                        <div class="mt-14">
+                            <button
+                                class="w-full rounded-md bg-[var(--primary-color)] py-3 px-5 text-base text-white transition-all hover:opacity-80">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in"
+                        class="flex flex-col flex-1 w-full  max-w-[380px] bg-white rounded-2xl shadow-lg p-10 border border-[var(--primary-color)] hover:scale-[1.02] transition-transform duration-200">
+                        <div class="pb-10 mb-10 text-center border-b border-[var(--subtext-color)]">
+                            <p class="text-sm uppercase font-semibold text-[var(--subtext-color)]">Pro</p>
+                            <h1 class="flex justify-center items-end gap-1 mt-5 font-bold text-[var(--secondary-color)] text-7xl">
+                                <span class="text-3xl">$</span>59
+                                <span class="text-2xl text-[var(--subtext-color)]">/mo</span>
+                            </h1>
+                        </div>
+                        <ul class="flex flex-col gap-5">
+                            <li class="flex items-center gap-4">
+                                <span class="p-1.5 border rounded-full border-[var(--primary-color)] bg-[var(--primary-color)]/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5 text-[var(--primary-color)]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                                    </svg>
+                                </span>
+                                <p class="text-[var(--subtext-color)] text-base">Unlimited team members</p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="p-1.5 border rounded-full border-[var(--primary-color)] bg-[var(--primary-color)]/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5 text-[var(--primary-color)]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                                    </svg>
+                                </span>
+                                <p class="text-[var(--subtext-color)] text-base">500+ components</p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="p-1.5 border rounded-full border-[var(--primary-color)] bg-[var(--primary-color)]/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5 text-[var(--primary-color)]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                                    </svg>
+                                </span>
+                                <p class="text-[var(--subtext-color)] text-base">24/7 premium support</p>
+                            </li>
+                        </ul>
+                        <div class="mt-14">
+                            <button
+                                class="w-full rounded-md bg-[var(--primary-color)] py-3 px-5 text-base text-white transition-all hover:opacity-80">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in"
+                        class="flex flex-col flex-1 w-full  max-w-[380px] bg-white rounded-2xl shadow-lg p-10 border border-[var(--primary-color)] hover:scale-[1.02] transition-transform duration-200">
+                        <div class="pb-10 mb-10 text-center border-b border-[var(--subtext-color)]">
+                            <p class="text-sm uppercase font-semibold text-[var(--subtext-color)]">team</p>
+                            <h1 class="flex justify-center items-end gap-1 mt-5 font-bold text-[var(--secondary-color)] text-7xl">
+                                <span class="text-3xl">$</span>29
+                                <span class="text-2xl text-[var(--subtext-color)]">/mo</span>
+                            </h1>
+                        </div>
+                        <ul class="flex flex-col gap-5">
+                            <li class="flex items-center gap-4">
+                                <span class="p-1.5 border rounded-full border-[var(--primary-color)] bg-[var(--primary-color)]/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5 text-[var(--primary-color)]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                                    </svg>
+                                </span>
+                                <p class="text-[var(--subtext-color)] text-base">5 team members</p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="p-1.5 border rounded-full border-[var(--primary-color)] bg-[var(--primary-color)]/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5 text-[var(--primary-color)]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                                    </svg>
+                                </span>
+                                <p class="text-[var(--subtext-color)] text-base">200+ components</p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="p-1.5 border rounded-full border-[var(--primary-color)] bg-[var(--primary-color)]/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5 text-[var(--primary-color)]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                                    </svg>
+                                </span>
+                                <p class="text-[var(--subtext-color)] text-base">Priority support</p>
+                            </li>
+                        </ul>
+                        <div class="mt-14">
+                            <button
+                                class="w-full rounded-md bg-[var(--primary-color)] py-3 px-5 text-base text-white transition-all hover:opacity-80">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
     </main>
+    <footer class="bg-[var(--secondary-color)] text-white py-14 px-6 mt-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3  text-center md:text-left">
+
+            <!-- Logo + Short Text -->
+            <div>
+                <h2 class="text-2xl font-bold mb-3 text-[var(--primary-color)]">Todo</h2>
+                <p class="text-[var(--subtext-color)] text-sm max-w-sm mx-auto md:mx-0">
+                    Simple and effective task management built to help you focus, track progress, and stay organized every day.
+                </p>
+            </div>
+
+            <!-- Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-[var(--primary-color)]">Quick Links</h3>
+                <ul class="space-y-3 text-[var(--subtext-color)]">
+                    <li><a href="#" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#" class="hover:text-white transition">Features</a></li>
+                    <li><a href="#" class="hover:text-white transition">Plans</a></li>
+                    <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-[var(--primary-color)]">Follow Me</h3>
+                <div class="flex justify-center md:justify-start gap-5">
+
+                    <a href="https://www.linkedin.com/in/ahmedsamehazouz/" target="_blank"
+                        class="text-[var(--subtext-color)] hover:text-[var(--primary-color)] transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.027-3.06-1.865-3.06-1.868 0-2.155 1.459-2.155 2.969v5.695h-3v-10h2.879v1.367h.041c.401-.757 1.38-1.557 2.843-1.557 3.04 0 3.604 2.003 3.604 4.609v5.581z" />
+                        </svg>
+                    </a>
 
 
+                    <a href="https://github.com/Ahmedsamehm" target="_blank"
+                        class="text-[var(--subtext-color)] hover:text-[var(--primary-color)] transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 .5C5.73.5.5 5.73.5 12.02c0 5.1 3.29 9.42 7.86 10.95.58.11.79-.25.79-.56 0-.28-.01-1.03-.02-2.02-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.18.08 1.8 1.21 1.8 1.21 1.04 1.79 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.79 1.08.79 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-[var(--subtext-color)] mt-10 pt-6 text-center text-[var(--subtext-color)] text-sm">
+            © 2025 Todo App. All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true,
+        });
+    </script>
     <script src="./main.js"></script>
 
 </body>

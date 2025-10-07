@@ -36,8 +36,11 @@ h4,
 h5 {
   font-weight: bold;
   color: #24252c;
+  text-transform: capitalize;
 }
-
+img {
+  border-radius: 0.75rem;
+}
 a:hover {
   color: var(--primary-color);
   transition: all 0.5s ease-in-out;
@@ -55,6 +58,9 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+.bg-Section {
+  background-color: var(--subtext-color);
+}
 /* .secondary {
   color: #24252c;
 } */
