@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+body {
+  font-family: Sans-Serif;
+}
+
+h1 {
+  font-size: 2.75rem; /* 44px */
+}
+
+h2 {
+  font-size: 2.06rem; /* 33px */
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h4 {
+  font-size: 1.19rem; /* 19px */
+}
+
+h5 {
+  font-size: 0.88rem; /* 14px */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+a:hover {
+  color: #5f33e1;
+  transition: all 0.5s ease-in-out;
+}
+
+.primary {
+  color: #5f33e1;
+}
+.secondary {
+  color: #24252c;
+}
+
+.subtext {
+  color: #6e6a7c;
+}
+
+#mobile_menu {
+  transition: all 0.5s ease-in-out;
+}
