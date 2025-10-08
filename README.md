@@ -1,5 +1,5 @@
 
-[landingpage.bmp](https://github.com/user-attachments/files/22771008/landingpage.bmp)
+<img width="4800" height="3600" alt="landingpage" src="https://github.com/user-attachments/assets/3bacf356-0222-4c20-8e63-269a03a7b5db" />
 
 
 # Task Management & To-Do List App
