@@ -1,12 +1,13 @@
 
 <img width="4800" height="3600" alt="landingpage" src="https://github.com/user-attachments/assets/3bacf356-0222-4c20-8e63-269a03a7b5db" />
 
-
 # Task Management & To-Do List App
 
 I built this project based on a **Figma design** from the community called **“Task Management & To-Do List App.”**
 
-The original design was made for **mobile**, and I **converted it to a web app** layout.
+The original design was made for **mobile**, and I **converted it to a web app** layout.  
+You can view the original design here:  
+[Task Management & To-Do List App (Figma Community)](https://www.figma.com/design/PUqJiEZDFNUXDE5tXLfz8C/Task-management---to-do-list-app--Community-?node-id=101-125&t=a8KfznkyrBZzTgj3-0)
 
 ---
 
