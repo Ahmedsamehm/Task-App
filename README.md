@@ -9,6 +9,9 @@ The original design was made for **mobile**, and I **converted it to a web app**
 You can view the original design here:  
 [Task Management & To-Do List App (Figma Community)](https://www.figma.com/design/PUqJiEZDFNUXDE5tXLfz8C/Task-management---to-do-list-app--Community-?node-id=101-125&t=a8KfznkyrBZzTgj3-0)
 
+
+![cursorful-video-1759927892304-ezgif com-gif-to-mp4-converter](https://github.com/user-attachments/assets/8404b266-6b46-47f9-b2d2-3cece9aedfac)
+
 ---
 
 ## 🛠️ What I Used
